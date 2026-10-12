@@ -1,4 +1,4 @@
-aiohttp==3.7.4.post0
+aiohttp
 async-timeout==3.0.1
 attrs==21.4.0
 certifi==2021.10.8
@@ -8,9 +8,9 @@ flake8==4.0.1
 idna==3.3
 iniconfig==1.1.1
 mccabe==0.6.1
-multidict==6.0.2
+multidict
 packaging==21.3
-Pillow==9.5.0
+Pillow
 pluggy==1.0.0
 py==1.11.0
 pycodestyle==2.8.0
@@ -20,6 +20,6 @@ pytest==6.2.5
 python-dotenv==0.19.2
 requests==2.27.1
 toml==0.10.2
-typing-extensions==4.0.1
+typing-extensions
 urllib3==1.26.8
-yarl==1.8.1
+yarl
