@@ -23,3 +23,5 @@ toml==0.10.2
 typing-extensions
 urllib3==1.26.8
 yarl
+py-cord==2.6.1
+audioop-lts

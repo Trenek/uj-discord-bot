@@ -1,9 +1,11 @@
 import discord
 import os
+import asyncio
 
 from discord.ext.commands import Bot as BotBase
 from discord.ext.commands import CommandNotFound
 from discord.ext.commands import cooldown, BucketType, CommandOnCooldown
+from source.database import reminderRoutine
 
 from dotenv import load_dotenv
 
@@ -61,6 +63,10 @@ class Bot(BotBase):
             await self.change_presence(
                 activity=discord.Game(name="Type ?background")
             )
+    
+            self.newReminder = asyncio.Event()
+            asyncio.create_task(reminderRoutine(self))
+
             print("Bot ready.", flush=True)
         else:
             print("Bot reconnected", flush=True)
