@@ -188,7 +188,9 @@ async def stats(ctx):
 )
 async def background(ctx) -> None:
     await ctx.send(
-        "Change your background on our site:\nhttp://vps-348e48ae.vps.ovh.net/"
+        # "Change your background on our site:\nhttp://vps-348e48ae.vps.ovh.net/"
+        "See our webite: \nhttps://bitly.com/98K8eH", suppress_embeds = True
+
     )
 
 
