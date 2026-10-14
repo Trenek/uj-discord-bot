@@ -39,7 +39,16 @@ exclude = '''
 [tool.uv]
 package = false
 
+[tool.flake8]
+exclude = [
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+]
+
 [dependency-groups]
 dev = [
+    "flake8>=7.4.1",
     "pytest>=9.1.1",
 ]
